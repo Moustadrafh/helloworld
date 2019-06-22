@@ -23,7 +23,7 @@ node {
 
     stage('Push image') {
         /* Phase finale */
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+        docker.withRegistry('https://registry.hub.docker.com', 'moustadrafh/hello-world') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
