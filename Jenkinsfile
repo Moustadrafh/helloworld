@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* Lancement de la compilation */
 
-        app = docker.build("getintodevops/hellonode")
+        app = docker.build("moustadrafh/hello-world")
     }
 
     stage('Test image') {
